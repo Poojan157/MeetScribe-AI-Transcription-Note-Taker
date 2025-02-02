@@ -1,0 +1,14 @@
+# Environment variables file , holds the deepgram API key
+.env
+
+# Node modules directory
+node_modules/
+
+# Notes directory , stores the AI generated notes of the google meet
+notes/
+
+# Output directory , stores the transcript of the google meet
+output/
+
+# Uploads directory , stores the audio of the google meet
+uploads/

@@ -1,0 +1,24 @@
+{
+  "name": "Meet Transcriber & AI Note Taker",
+  "description": "Records Google Meet audio, transcribes it, and generates AI-powered notes.",
+  "version": "1",
+  "manifest_version": 3,
+  "minimum_chrome_version": "116",
+  "action": {
+      "default_icon": "icons/not-recording.png"
+  },
+  "background": {
+      "service_worker": "service-worker.js"
+  },
+  "permissions": [
+      "tabCapture",
+      "offscreen",
+      "activeTab"
+  ],
+  "content_scripts": [
+      {
+          "matches": ["https://meet.google.com/*"],
+          "js": ["content-script.js"]
+      }
+  ]
+}
